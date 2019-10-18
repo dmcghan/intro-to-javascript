@@ -18,6 +18,8 @@ hol.config(function ($mdThemingProvider) {
 
 hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '$sce', '$mdDialog', '$mdToast' 
   , function ($scope, $http, $mdSidenav, $sanitize, $sce, $mdDialog, $mdToast) {
+      const HOME_PAGE = 'README.md';
+
       $scope.toast = $mdToast;
       $scope.toastPromise = {};
       $scope.showCustomToast = function(data, delay, alwaysShow) {
@@ -74,7 +76,9 @@ hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '
               filename: $scope.currentFilename
             });
           } else {
-            $scope.showHomePage();
+            $scope.loadModule({
+              filename: HOME_PAGE
+            });
           }
         };
 
@@ -95,12 +99,6 @@ hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '
 
           return success;
         }
-
-        $scope.showHomePage = function() {
-          $scope.loadModule({
-            filename: 'README.md'
-          });
-        };
 
         $scope.loadContent = function (page) {
             console.log('Loading page: ' + page);
@@ -128,7 +126,13 @@ hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '
               }, 
               function (err) {
                 $scope.showCustomToast({'text': 'File: ' + page + ' not found!'}, 5000, true);
-                $scope.showHomePage();
+
+                if (page !== HOME_PAGE) {
+                  $scope.loadModule({
+                    filename: HOME_PAGE
+                  });
+                }
+
                 console.log('Error getting lab guide markdown!');
                 console.log(err);
               }
