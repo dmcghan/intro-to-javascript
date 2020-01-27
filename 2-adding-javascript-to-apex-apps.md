@@ -4,7 +4,7 @@
 
 Up to this point, you have been working with JavaScript outside of APEX. In this module, you will learn the most common ways to add JavaScript to APEX applications. The options include Dynamic Actions, Dynamic Actions with JavaScript hooks, page- and component-level attributes, and application files. 
 
-Think of these options as a progression, with each one requiring more knowledge of JavaScript, APEX’s JavaScript APIs, and web development in general. New APEX developers should start by learning Dynamic Actions and progress to subsequent options only when they are ready *and* the application requirements cannot be satisfied without a more advanced approach.
+Think of these options as a progression, with each one requiring more knowledge of JavaScript, APEX’s JavaScript APIs, and web development in general. New APEX developers should start by learning Dynamic Actions and progress to subsequent options only when they are ready and the application requirements cannot be satisfied without a more advanced approach.
 
 Generally speaking, the more declarative the solution, the easier it will be to implement and maintain. 
 
