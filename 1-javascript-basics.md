@@ -4,7 +4,7 @@
 
 In this module you will start working with the basics of JavaScript including variables, operators, and functions - all from the console in your browser's developer tools. 
 
-This module is based on [Google Chrome's DevTools](https://developers.google.com/web/tools/chrome-devtools/), so use that browser if possible. You may use a different browser if needed, but you'll need to adapt the instructions the follow as needed.
+This module is based on [Google Chrome's DevTools](https://developers.google.com/web/tools/chrome-devtools/), so use that browser if possible. You may use a different browser if you wish, but you'll need to adapt the instructions that follow as needed.
 
 ***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -18,7 +18,7 @@ This module is based on [Google Chrome's DevTools](https://developers.google.com
 
 ### **Part 1:** Using the browser's console
 
-In this part, you will learn how to declare variables and work with different operators.
+In this part, you will learn how to declare variables and work with different operators in your web browser's console.
 
 1.  In Chrome, press **Command+Option+J** (Mac) or **Control+Shift+J** (Windows/Linux) to open the DevTools Console tab.
 
@@ -59,7 +59,7 @@ In this part, you will learn how to declare variables and work with different op
 
     ![](images/1/console-log-output.png)
 
-    As you can see, `console.log` method provides a means of getting output from JavaScript code. This can be useful for simple debugging.
+    As you can see, the `console.log` method provides a means of getting output from JavaScript code. This can be useful for simple debugging.
 
     `undefined` is shown at the end because the last statement (a call to `console.log`) did not return a value. It's as though it returned `undefined`.
 
@@ -75,9 +75,7 @@ In this part, you will learn how to declare variables and work with different op
 
 Now that you have a basic working knowledge of the console, it's time to get your hands dirty working with JavaScript.
 
-Plan: 
-
-1.  Enter the following code in the console. Use the variables as a guide to add four new variables, one of each type. Press **Enter** as use the console to see the values of the variables.
+1.  Enter the following code in the console. Then use the declarations as a guide to add four new variables, one of each type. Press **Enter** and use the console to see the values of the variables.
 
     ```
     var msg = 'Hello';
@@ -107,7 +105,7 @@ Programming wouldn't be possible without conditionals and loops. The basic `if` 
     }
     ```
 
-    Run your code a of couple times to test it. For extra practice, write an `if-then-else` statement.
+    Run your code to test it as needed. For extra practice, write an `if-then-else` statement.
 
 2.  Add on to the code from the previous step by writing a loop that displays the values in the array you declared in Step 1. Use the following code as a guide.
 
@@ -117,11 +115,11 @@ Programming wouldn't be possible without conditionals and loops. The basic `if` 
     }
     ```
 
-    Run your code a of couple times to test it.
+    Run your code to test it as needed.
 
 ### **Part 4:** Objects and functions
 
-Objects and functions are used to organize and compose code in JavaScript. It's important to have a basic understanding of how they work before moving on to more complex topics.
+Objects and functions are used to compose and organize code in JavaScript. It's important to have a basic understanding of how they work before moving on to more complex topics.
 
 1.  Enter the following code into the console and execute it.
 
@@ -140,6 +138,11 @@ Objects and functions are used to organize and compose code in JavaScript. It's 
 
 3.  Using the console, type and execute code that invokes the `sayHello` function while passing it the `person` variable.
 
+4. If time permits, consider making the following enhancements:
+
+    * Add a new function named `sayHello2` that accepts an array of people and loops over them to say hello to each one.
+    * Update `sayHello2` so that if a person's first or last name is an empty string (`''`), `null`, or `undefined`, it does not say hello.
+
 ## Summary
 
-This completes Module 1. At this point, you should feel comfortable working with some of the core constructs of JavaScript and browser's console. [Click here](2-create-an-app-from-a-spreadsheet.md) to navigate to Module 2.
+This completes Module 1. At this point, you should be getting comfortable working with the console and some of JavaScript's core concepts. [Click here](2-adding-javascript-to-apex-apps.md) to navigate to Module 2.
