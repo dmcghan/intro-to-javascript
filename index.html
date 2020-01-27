@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="hol" class="no-js">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,59 +15,46 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
   <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
   <script src='https://cdn.rawgit.com/showdownjs/showdown/1.9.0/dist/showdown.min.js'></script>
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="css/lab.css">
-  <link rel="shortcut icon" href="https://oracle.github.io/learning-library/workshops/common-content/fav.ico" />
 </head>
-<body ng-cloak ng-controller="holController" md-theme="{{theme}}" class="{{theme}}" layout="column">
-    <!--    TOP TOOLBAR-->
-    <md-toolbar class="md-hue-2 infra" flex="none" layout-padding>
-      <div class="md-toolbar-tools infra">
-        <md-button class="md-icon-button md-raised md-accent infra" aria-label="menu-button" ng-click="toggleLeft()">
-          <img src="https://oracle.github.io/learning-library/workshops/common-content/images/common/hamburger.png" class="menu-hamburger infra" />
-        </md-button>
-        <h2 class="infra" flex="noshrink">
-          <span class="infra">{{manifest.lab.title}}</span>
-        </h2>
-        <div flex="grow" layout="row" layout-align="end center" >
-          <md-button class="high-contrast-hover" aria-label="Home" ng-click="showHomePage()">
-            Home
-          </md-button>
-        </div>
+
+<body ng-cloak ng-controller="holController">
+
+  <!-- TOP TOOLBAR-->
+  <header class="hol-Header" role="banner">
+    <div class="hol-Header-wrap">
+      <button class="hol-Header-button hol-Header-button--menu" aria-label="Open Menu" title="Open Menu" ng-click="toggleLeft()"><span class="hol-Header-toggleIcon"></span></button>
+      <div class="hol-Header-logo"><span ng-click="showHomePage()">Hands on Labs</span></div>
+      <div class="hol-Header-actions">
+        <button class="hol-Header-button hol-Header-button--home" aria-label="Home" ng-click="showHomePage()">Home</button>
       </div>
-    </md-toolbar>
-
-    <!--    SIDE NAV MENU -->
-    <md-sidenav class="md-sidenav-left infra" md-component-id="left" md-whiteframe="4">
-      <md-toolbar class="md-hue-2 infra">
-        <h1 class="md-toolbar-tools infra">Lab Contents</h1>
-      </md-toolbar>
-      <md-content style="height: 110%;">
-        <md-list>
-          <md-list-item class="md-3-line toc-item infra" ng-repeat="module in manifest.lab.modules" ng-click="loadModule(module); close();">
-            <div class="md-list-item-text infra">
-              <h3 class="infra" style="overflow: visible; white-space: normal;">{{module.title}}</h3>
-            </div>
-            <md-divider></md-divider>
-          </md-list-item>
-        </md-list>
-        <md-button ng-click="close()" class="md-primary infra">
-          Close Menu
-        </md-button>
-      </md-content>
-    </md-sidenav>
-
-    <div id="toastHolder"></div>
-
-    <!-- MODULE CONTENT -->
-    <div id='module-content' ng-bind-html='htmlContent' ng-show="selection == 'lab'">
-        <!-- content filled dynamically -->
     </div>
+  </header>
 
-    <div id='returnToTop' layout layout-align="center center" ng-show="selection == 'lab'">
-        <a href="#" layout-margin layout-padding>^ Return to Top</a>
-    </div>
+  <!-- SIDE NAV MENU -->
+  <md-sidenav md-component-id="left">
+    <nav class="hol-Nav">
+      <button class="hol-Nav-close" aria-label="Close Menu" title="Close Menu" ng-click="close()"><span class="hol-Nav-closeIcon"></span></button>
+      <div class="hol-Nav-title">Lab Contents</div>
+      <ul class="hol-Nav-list">
+        <li ng-repeat="module in manifest.lab.modules" ng-click="loadModule(module); close();">{{module.title}}</li>
+      </ul>
+    </nav>
+  </md-sidenav>
 
-    <script src='js/lab.js'></script>
+  <div id="toastHolder"></div>
+
+  <!-- MODULE CONTENT -->
+  <main class="hol-Content" id='module-content' ng-bind-html='htmlContent' ng-show="selection == 'lab'">
+    <!-- content filled dynamically -->
+  </main>
+
+  <footer class="hol-Footer" ng-show="selection == 'lab'">
+    <a class="hol-Footer-topLink" href="#top">Return to Top</a>
+  </footer>
+
+  <script src='js/lab.js'></script>
+
 </body>
+
 </html>

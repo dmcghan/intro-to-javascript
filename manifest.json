@@ -1,30 +1,22 @@
 {
   "lab": {
-    "title": "Node.js SODA APIs on Oracle Autonomous Database Hands-on Lab",
+    "title": "Introduction to JavaScript for APEX Developers",
     "modules": [
       {
         "filename": "README.md",
-        "title": "Lab Introduction"
+        "title": "Lab Introduction and Setup"
       },
       {
-        "filename": "1-create-an-atp-instance.md",
-        "title": "Module 1: Create an ATP Instance"
+        "filename": "1-javascript-basics.md",
+        "title": "Module 1: JavaScript Basics"
       },
       {
-        "filename": "2-create-a-database-user-with-soda-privileges.md",
-        "title": "Module 2: Create a Database User with SODA Privileges"
+        "filename": "2-adding-javascript-to-apex-apps.md",
+        "title": "Module 2: Adding JavaScript to APEX Apps"
       },
       {
-          "filename": "3-package-the-todo-app-to-run-locally.md",
-          "title": "Module 3: Package the Todo App to Run Locally"
-      },
-      {
-        "filename": "4-use-soda-apis-for-crud-operations.md",
-        "title": "Module 4: Use SODA APIs for CRUD Operations"
-      },
-      {
-        "filename": "5-use-sql-features-for-json.md",
-        "title": "Module 5: Use SQL Features for JSON"
+        "filename": "3-working-with-the-dom-and-jquery.md",
+        "title": "Module 3: Working with the DOM and jQuery"
       }
     ]
   }
