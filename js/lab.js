@@ -18,7 +18,14 @@ hol.config(function ($mdThemingProvider) {
 
 hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '$sce', '$mdDialog', '$mdToast', 
   function ($scope, $http, $mdSidenav, $sanitize, $sce, $mdDialog, $mdToast) {
-      $scope.toast = $mdToast;
+    $('#module-content').on('click', 'a[href$=".md"]', function(event) {
+      event.preventDefault();
+      $scope.loadModule({
+        filename: this.getAttribute('href')
+      });
+    });
+    
+    $scope.toast = $mdToast;
       $scope.toastPromise = {};
       $scope.showCustomToast = function(data, delay, alwaysShow) {
         if($scope.selection === 'lab' || alwaysShow) {
@@ -58,6 +65,7 @@ hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '
         $scope.trustSrc = function (src) {
           return $sce.trustAsResourceUrl(src);
         }
+
         var preparePage = function() {
           if (parseQueryString()) {
             $scope.loadModule({
@@ -141,18 +149,18 @@ hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '
 
           $scope.loadContent(module.filename);
 
-          setTimeout(function () {
-            $("#module-content a").each(function() {
-              if (this.href.endsWith('.md')) {
-                $(this).on("click", function (event) {
-                  event.preventDefault();
-                  $scope.loadModule({
-                    filename: this.getAttribute('href')
-                  });
-                });
-              }
-            })
-          }, 500);
+          // setTimeout(function () {
+          //   $("#module-content a").each(function() {
+          //     if (this.href.endsWith('.md')) {
+          //       $(this).on("click", function (event) {
+          //         event.preventDefault();
+          //         $scope.loadModule({
+          //           filename: this.getAttribute('href')
+          //         });
+          //       });
+          //     }
+          //   })
+          // }, 500);
         }
 
         $(window).on('popstate', function(event) {
