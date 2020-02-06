@@ -148,19 +148,6 @@ hol.controller('holController', ['$scope', '$http', '$mdSidenav', '$sanitize', '
           }
 
           $scope.loadContent(module.filename);
-
-          // setTimeout(function () {
-          //   $("#module-content a").each(function() {
-          //     if (this.href.endsWith('.md')) {
-          //       $(this).on("click", function (event) {
-          //         event.preventDefault();
-          //         $scope.loadModule({
-          //           filename: this.getAttribute('href')
-          //         });
-          //       });
-          //     }
-          //   })
-          // }, 500);
         }
 
         $(window).on('popstate', function(event) {

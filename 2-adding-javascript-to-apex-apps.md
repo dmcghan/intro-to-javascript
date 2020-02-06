@@ -4,7 +4,7 @@
 
 Up to this point, you have been working with JavaScript outside of APEX. In this module, you will learn the most common ways to add JavaScript to APEX applications. The options include Dynamic Actions, Dynamic Actions with JavaScript hooks, page- and component-level attributes, and application files. 
 
-Think of these options as a progression, with each one requiring more knowledge of JavaScript, APEX’s JavaScript APIs, and web development in general. New APEX developers should start by learning Dynamic Actions and progress to subsequent options only when they are ready and the application requirements cannot be satisfied without a more advanced approach.
+Think of these options as a progression, with each one requiring more knowledge of JavaScript, APEX's JavaScript APIs, and web development in general. New APEX developers should start by learning Dynamic Actions and progress to subsequent options only when they are ready and the application requirements cannot be satisfied without a more advanced approach.
 
 Generally speaking, the more declarative the solution, the easier it will be to implement and maintain. 
 
@@ -34,7 +34,7 @@ Dynamic Actions are the easiest way to add JavaScript to an application in APEX.
 
     ![](images/2/product-details.png)
 
-    At the moment, the **Product Image** item and the region that displays the image are both visible when the **Product Avaiable** item is set to **No**. In the subsequet steps, you will implement a Dynamic Action that hides the image item and related region when **Product Avaiable** item is set to **No**.
+    At the moment, the **Product Image** item and the region that displays the image are both visible when the **Product Available** item is set to **No**. In the subsequent steps, you will implement a Dynamic Action that hides the image item and related region when **Product Available** item is set to **No**.
 
 4.  Navigate to the Page Designer for page 6, the Product Details page, in the sample app. In the Rendering pane on the left, right-click the item named **P6_PRODUCT_AVAIL** and select **Create Dynamic Action**.
 
@@ -66,19 +66,19 @@ Dynamic Actions are the easiest way to add JavaScript to an application in APEX.
 
     ![](images/2/affected-elements-2.png)
 
-11. At this point, the Show actions are configured correctly but the Hide actions still need to be created. Since Hide is an opposite of Show, APEX makes this very easy. Select both Show actions in the left pane, then right-click either action and select **Create Opposite Action**.
+11. At this point, the Show actions are configured correctly, but the Hide actions still need to be created. Since Hide is the opposite of Show, APEX makes this very easy. Select both Show actions in the left pane, then right-click either action and select **Create Opposite Action**.
 
     ![](images/2/create-opposite-action.png)
 
     You should see two new Hide actions appear under the False branch in the Dynamic Action. Best of all, they are already configured with the settings from the previous actions.
 
-12. Save your changes and then return to the runtime application. Close the form page and reopen it by clicking on a product again. Now, the image item and region should be hidden or shown based on the value of **Product Available**. With Dynamic Actions, you can do all of that without writing a single line of JavaScript code!
+12. Save your changes and then return to the runtime application. Close the form page and re-open it by clicking on a product again. Now, the image item and region should be hidden or shown based on the value of **Product Available**. With Dynamic Actions, you can do all of that without writing a single line of JavaScript code!
 
     ![](images/2/product-details-2.png)
     
 ### **Part 2:** Using Dynamic Actions with JavaScript hooks
 
-The Dynamic Action framework provides various JavaScript hooks, or features which are geared toward developers that know a little JavaScript. These features can make the framework much more powerful and flexible.
+The Dynamic Action framework provides various JavaScript hooks, or features that are geared toward developers that know a little JavaScript. These features can make the framework much more powerful and flexible.
 
 In this part, you will use these features in the Dynamic Action you created in the previous part. The end result will be the same, but you will have a better idea of the JavaScript hooks available to you when needed. 
 
@@ -198,13 +198,13 @@ In addition to Dynamic Actions, there are various attributes at the page and com
     }
     ```
 
-    This annonymous function accepts an options object and modifies it by adding a `dataFilter` function. The `dataFilter` function gives each series in the chart an explict color.
+    This anonymous function accepts an options object and modifies it by adding a `dataFilter` function. The `dataFilter` function gives each series in the chart an explicit color.
 
-6.  Save you changes and rerun the page. You should see the same chart but with green colors now.
+6.  Save your changes and rerun the page. You should see the same chart but with green colors now.
 
 ### **Part 4:** Using Static Files
 
-In the last part, you added JavaScript code directly to page and component level attributes. For performance and reusability reasons, it can be beneficial to move JavaScript code to Static Files instead. While you don't have enough JavaScript code in the Sample Database Application to realize those benefits, in this part you'll move the code added previously to Static Files to see how it's done.
+In the last part, you added JavaScript code directly to page and component level attributes. For performance and reusability reasons, it can be beneficial to move JavaScript code to Static Files instead. While you don't have enough JavaScript code in the Sample Database Application to realize those benefits, in this part, you'll move the code added previously to Static Files to see how it's done.
 
 1.  The following code contains the `doWork` function that's being invoked on the home page and the function that's styling the colors of the Sales by Category chart. The only change to the second function is that it now has a name (it was an anonymous function before). Save the code in a new file on your computer named **sample-db-app.js**.
 
@@ -232,7 +232,7 @@ In the last part, you added JavaScript code directly to page and component level
 
     Note that the function does not have parenthesis on the end. That makes it a reference to the function declared in the file rather than an invocation of the function. APEX will invoke the function at the appropriate time.
 
-4.  Select the page level attributes (root node under the rendering tab) and put the following file reference in the **File URL(s)** item in the **JavaScript** section: **#APP_IMAGES#sample-db-app.js**
+4.  Select the page-level attributes (root node under the rendering tab) and put the following file reference in the **File URL(s)** item in the **JavaScript** section: **#APP_IMAGES#sample-db-app.js**
 
 5.  Save your changes and run the page. The chart should be styled with shades of green as before, only now the responsible JavaScript is defined in the static file. If the function were generic enough, it could be used elsewhere in the application.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this module you will start working with the basics of JavaScript including variables, operators, and functions - all from the console in your browser's developer tools. 
+In this module, you will start working with the basics of JavaScript, including variables, operators, and functions - all from the console in your browser's developer tools. 
 
 This module is based on [Google Chrome's DevTools](https://developers.google.com/web/tools/chrome-devtools/), so use that browser if possible. You may use a different browser if you wish, but you'll need to adapt the instructions that follow as needed.
 
@@ -69,7 +69,7 @@ In this part, you will learn how to declare variables and work with different op
 
     Note that if you type the full name of a variable and press **Enter**, the value of the variable will be displayed in the console.
 
-8.  Refresh the web page and try typing the name of a variable again. They will not show up because the each time a page is loaded in the browser it gets its own new JavaScript context. 
+8.  Refresh the web page and try typing the name of a variable again. They will not show up because each time a page is loaded in the browser, it gets its own new JavaScript context. 
 
 ### **Part 2:** Variables, data types, and operators
 
