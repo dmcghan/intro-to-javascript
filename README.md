@@ -17,7 +17,7 @@ APEX developers only need to know a little bit of JavaScript to have a significa
 | --- | --- | --- |
 | 1 | [JavaScript Basics](1-javascript-basics.md) | 60 min |
 | 2 | [Adding JavaScript to APEX Apps](2-adding-javascript-to-apex-apps.md) | 60 min |
-| 3 | Working with jQuery and the DOM | 60 min |
+| 3 | [Working with jQuery and the DOM](3-working-with-the-dom-and-jquery.md) | 60 min |
 
 ## Parts
 
