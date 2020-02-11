@@ -1,5 +1,4 @@
 "use strict";
-var showdown = "";
 const manifestFileName = "manifest.json";
 const expandText = "Expand All Parts";
 const collapseText = "Collapse All Parts";
