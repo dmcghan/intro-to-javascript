@@ -1,27 +1,26 @@
 # Introduction to JavaScript for APEX Developers
 
-For developers that know SQL and PL/SQL, no other framework is as empowering as Oracle Application Express (APEX). But at the end of the day, APEX creates web apps, and it's JavaScript that programs the web. Over the years, JavaScript's role in APEX apps has increased, both for the creators of APEX and the developers using it - a trend that will continue in the years to come.
+## Welcome
 
-The creators of APEX use JavaScript for Interactive Reports, JET Charts, Interactive Grids, and much more. They also created public JavaScript APIs to allow developers using APEX to configure components and make their apps more interactive. Now, when a developer can meet a requirement 100% declaratively, it often takes just a few lines of JavaScript code to get the job done.
+Welcome to the Introduction to JavaScript for APEX Developers workshop. For developers that know SQL and PL/SQL, no other framework is as empowering as Oracle Application Express (APEX). But at the end of the day, APEX creates web apps, and it's JavaScript that programs the web. Over the years, JavaScript's role in APEX apps has increased, both for the creators of APEX and the developers using it - a trend that will continue in the years to come.
 
 APEX developers only need to know a little bit of JavaScript to have a significant impact, and that's what this hands-on lab is all about! You'll start by learning some of the basics of JavaScript, then learn how to add JavaScript to APEX apps, and finally, you'll learn to use jQuery to work with the DOM.
-## Lab Objectives
+
+**Lab Objectives**
 
 * Learn the basics of JavaScript using PL/SQL as a guide
 * Learn how to add JavaScript to an APEX app
 * Get experience working with the jQuery and DOM
 
-## Lab Modules
+**Lab Modules**
 
 | # | Module | Est. Time |
 | --- | --- | --- |
-| 1 | [JavaScript Basics](1-javascript-basics.md) | 60 min |
-| 2 | [Adding JavaScript to APEX Apps](2-adding-javascript-to-apex-apps.md) | 60 min |
-| 3 | [Working with jQuery and the DOM](3-working-with-the-dom-and-jquery.md) | 60 min |
+| 1 | [JavaScript Basics](../1-javascript-basics/content.md) | 60 min |
+| 2 | [Adding JavaScript to APEX Apps](2-adding-javascript-to-apex-apps/content.md) | 60 min |
+| 3 | [Working with jQuery and the DOM](3-working-with-the-dom-and-jquery/content.md) | 60 min |
 
-## Parts
-
-### **Part 1**: Acquire an Oracle Cloud trial account
+## **Part 1**: Acquire an Oracle Cloud trial account
 
 In this part, you will sign up for an Oracle Cloud trial account. Trial accounts have access to the [free tier services](https://www.oracle.com/cloud/free/) and get a $300 credit for other services. This lab only requires an APEX Workspace, which is available via the free tier services and will continue to work when the credits expire (after 30 days). Use the credits as you wish to explore other parts of the Oracle Cloud.
 
@@ -33,7 +32,7 @@ In this part, you will sign up for an Oracle Cloud trial account. Trial accounts
 
     ![](images/get-started-email.png)
 
-### **Part 2:** Log in to your Oracle Cloud account
+## **Part 2:** Log in to your Oracle Cloud account
 
 In this part, you will log into your Oracle Cloud account so that you can start working with various services.
 
@@ -49,7 +48,7 @@ In this part, you will log into your Oracle Cloud account so that you can start 
 
     ![](images/enter-user-name-and-password.png)
 
-### **Part 3:** Create an Autonomous Transaction Processing instance
+## **Part 3:** Create an Autonomous Transaction Processing instance
 
 In this part, you will create an instance of the Autonomous Transaction Processing database service.
 
@@ -75,7 +74,7 @@ In this part, you will create an instance of the Autonomous Transaction Processi
 
     ![](images/status-available.png)
 
-### **Part 4:** Create a new workspace in APEX
+## **Part 4:** Create a new workspace in APEX
 
 When you first access APEX you will need to log in as an APEX instance administrator to create a workspace. A workspace is a logical domain where you define APEX applications. Each workspace is associated with one or more database schemas (database users) which are used to store the database objects, such as tables, views, packages, and more. These database objects are generally what APEX applications are built on top of.
 
@@ -113,9 +112,9 @@ When you first access APEX you will need to log in as an APEX instance administr
 
     ![](images/log-in-to-workspace.png)
 
-### **Part 5**: Navigate to Module 1
+## **Part 5**: Navigate to Module 1
 
-1.  [Click here](1-javascript-basics.md) to navigate to Module 1. Alternatively, you can click the navigation menu icon in the upper-left corner of the browser window to see a list of modules in the lab.
+1.  [Click here](1-javascript-basics/content.md) to navigate to Module 1. Alternatively, you can click the navigation menu icon in the upper-left corner of the browser window to see a list of modules in the lab.
 
     ![](images/lab-intro.png)
 
