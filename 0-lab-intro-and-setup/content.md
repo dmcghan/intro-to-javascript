@@ -47,7 +47,7 @@ In this part, you will log into your Oracle Cloud account so that you can start 
 
 4.  Enter your **Username** and **Password** in the input fields and click **Sign In**.
 
-    ![](images/0/enter-user-name-and-password.png)
+    ![](images/enter-user-name-and-password.png)
 
 ### **Part 3:** Create an Autonomous Transaction Processing instance
 
@@ -55,7 +55,7 @@ In this part, you will create an instance of the Autonomous Transaction Processi
 
 1.  From the Cloud Dashboard, click the navigation menu icon in the upper left-hand corner and then select **Autonomous Transaction Processing**.
 
-    ![](images/0/select-atp-in-nav-menu.png)
+    ![](images/select-atp-in-nav-menu.png)
 
 2.  Click **Create Autonomous Database**.
 
@@ -89,11 +89,11 @@ When you first access APEX you will need to log in as an APEX instance administr
 
 3.  Enter the password for the Administration Services and click **Sign In to Administration**. The password is the same as the one entered for the ADMIN user when creating the ATP instance: **`SecretPassw0rd`**
 
-    ![](images/0/log-in-as-admin.png)
+    ![](images/log-in-as-admin.png)
 
 4.  Click **Create Workspace**.
   
-   ![](images/0/welcome-create-workspace.png)
+   ![](images/welcome-create-workspace.png)
 
 5.  Enter the following details and click **Create Workspace**.
 

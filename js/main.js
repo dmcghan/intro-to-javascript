@@ -163,6 +163,9 @@ function updateH1Title(articleElement) {
 /* This function picks up the entire converted content in HTML, and break them into sections. */
 function wrapSectionTag(articleElement) {
     $(articleElement).find('h2').each(function () {
+        console.log(this);
+        console.log($(this).length);
+        
         $(this).nextUntil('h2').andSelf().wrapAll('<section></section>');
     });
     return articleElement;
