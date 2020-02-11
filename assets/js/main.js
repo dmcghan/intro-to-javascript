@@ -75,7 +75,7 @@ function closeRightSideNav() {
 The navigation appears only when the manifest file has more than 1 tutorial. The title that appears in the side navigation 
 is picked up from the manifest file. */
 function setupRightNav(manifest) {
-    let selectedTutorial;
+    let selectedModule;
     if (manifest.modules.length <= 1) {
         $('.rightNav').hide();
     } else if (manifest.modules.length > 1) { //means it is a workshop           
