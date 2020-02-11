@@ -242,9 +242,9 @@ function updateHeadContent(tutorialEntryInManifest) {
         }
     });
 }
-/* Setup left navigation and tocify */
+/* Setup left navigation */
 function setupLeftNav() {
-  $toc = $('#toc');
+  const $toc = $('#toc');
 
   $('h2').each(function() {
     $toc.append('<li style="cursor: pointer;"><a href="#">' + this.textContent + '</a></li>');
