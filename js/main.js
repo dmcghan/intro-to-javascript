@@ -1,5 +1,5 @@
 "use strict";
-var showdown = "js/showdown.min.js";
+var showdown = "";
 const manifestFileName = "manifest.json";
 const expandText = "Expand All Parts";
 const collapseText = "Collapse All Parts";
@@ -10,9 +10,6 @@ const queryParam = "?lab=";
 $(document).ready(function () {
     let manifestFileContent;
     $.when(
-        $.getScript(showdown, function () {
-            console.log("Showdown library loaded!");
-        }),
         $.getJSON(manifestFileName, function (manifestFile) {
             manifestFileContent = manifestFile; //reading the manifest file and storing content in manifestFileContent variable
             console.log("Manifest file loaded!");
@@ -248,26 +245,14 @@ function updateHeadContent(tutorialEntryInManifest) {
 }
 /* Setup left navigation and tocify */
 function setupLeftNav() {
-    let toc = $("#toc").tocify({
-        selectors: "h2, h3, h4"
-    }).data("toc-tocify");
-    toc.setOptions({ extendPage: false, smoothScroll: false, scrollTo: anchorOffset, highlightDefault: true, showEffect: "fadeIn" });
+  $toc = $('#toc');
 
-    $('.tocify-item').each(function () {
-        let itemName = $(this).attr('data-unique');
-        if ($(this) !== $('.tocify-item:eq(0)')) { //as the first section is not expandable or collapsible            
-            $(this).click(function () { //if left nav item is clicked, the corresponding section expands
-                expandSectionBasedOnHash(itemName);
-            });
-        }
-        if (itemName === location.hash.slice(1)) { //if the hash value matches, it clicks it after some time.
-            let click = $(this);
-            setTimeout(function () {
-                $(click).click();
-            }, 1000)
-        }
-    });
+  $('h2').each(function() {
+    $toc.append('<li style="cursor: pointer;"><a href="#">' + this.textContent + '</a></li>');
+  });
+
     $(window).scroll(function () {
+      console.log('scroll');
         if ($(this).scrollTop() > $("article").offset().top) {
             $('#toc').addClass("scroll");
             if (($(window).scrollTop() + $(window).height()) > $('footer').position().top) //if footer is seen                 
