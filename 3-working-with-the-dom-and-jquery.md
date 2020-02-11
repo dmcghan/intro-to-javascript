@@ -6,6 +6,8 @@ JavaScript would be useless in a web browser without the ability to manipulate t
 
 All the work in this module will be done via the browser's console. However, once understood, the code could easily be added to the APEX application using the techniques from the previous module.
 
+[Click here](https://www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-3-working-with-the-dom-and-jquery) to view the slides for this module.
+
 ***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
 ## Module 2 Objectives

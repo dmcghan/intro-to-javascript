@@ -6,7 +6,7 @@ In this module, you will start working with the basics of JavaScript, including 
 
 This module is based on [Google Chrome's DevTools](https://developers.google.com/web/tools/chrome-devtools/), so use that browser if possible. You may use a different browser if you wish, but you'll need to adapt the instructions that follow as needed.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/jpDAUfkc5qyeJ1?startSlide=2" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-1-javascript-basics" title="Introduction to JavaScript for APEX Developers - Module 1: JavaScript Basics" target="_blank">Introduction to JavaScript for APEX Developers - Module 1: JavaScript Basics</a></div>
+[Click here](https://www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-1-javascript-basics) to view the slides for this module.
 
 ***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
