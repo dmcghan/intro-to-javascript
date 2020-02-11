@@ -5,14 +5,13 @@ const expandText = "Expand All Parts";
 const collapseText = "Collapse All Parts";
 const anchorOffset = 0; //if header is fixed, it should be 70
 const copyButtonText = "Copy";
-const queryParam = "?lab=";
+const queryParam = "?module=";
 
 $(document).ready(function () {
     let manifestFileContent;
     $.when(
         $.getJSON(manifestFileName, function (manifestFile) {
             manifestFileContent = manifestFile; //reading the manifest file and storing content in manifestFileContent variable
-            console.log("Manifest file loaded!");
         }).fail(function () {
             alert("manifest.json file was not loaded. The manifest file should be co-located with the index.html file. If the file is co-located, check that the json format of the file is correct.");
         })
@@ -22,7 +21,6 @@ $(document).ready(function () {
         $.get(selectedTutorial.filename, function (markdownContent) { //reading MD file in the manifest and storing content in markdownContent variable
             //The setupAnalytics function is commented out as we are not using Google Analytics
             //setupAnalytics(); //enabling analytics
-            console.log(selectedTutorial.filename + " loaded!");
             $(articleElement).html(new showdown.Converter({ tables: true }).makeHtml(markdownContent)); //converting markdownContent to HTML by using showndown plugin                
             articleElement = renderVideos(articleElement); //adds iframe to videos    
             articleElement = addPathToImageSrc(articleElement, selectedTutorial.filename); //adding the path for the image based on the filename in manifest
@@ -83,22 +81,21 @@ function setupRightNav(manifest) {
     } else if (manifest.modules.length > 1) { //means it is a workshop           
         $('.rightNav').show();
         //adding tutorials from JSON and linking them with ?shortnames
-        $(manifest.modules).each(function (i, tutorial) {
-            let shortTitle = createShortNameFromTitle(tutorial.title);
+        $(manifest.modules).each(function (i, module) {
             let li = $(document.createElement('li')).click(function () {
-                location.href = queryParam + shortTitle;
+                location.href = queryParam + module.name;
             });
-            $(li).text(tutorial.title); //The title specified in the manifest appears in the side nav as navigation                    
-            if (window.location.search.split(queryParam)[1] === shortTitle) { //the selected class is added if the title is currently selected
+            $(li).text(module.title); //The title specified in the manifest appears in the side nav as navigation                    
+            if (window.location.search.split(queryParam)[1] === module.name) { //the selected class is added if the title is currently selected
                 $(li).attr("class", "selected");
-                selectedTutorial = tutorial;
+                selectedModule = module;
             }
             $(li).appendTo($('#mySidenav ul'));
             /* for accessibility */
             $(li).keydown(function (e) {
                 if (e.keyCode === 13 || e.keyCode === 32) { //means enter and space
                     e.preventDefault();
-                    location.href = queryParam + shortTitle;
+                    location.href = queryParam + module.name;
                 }
             });
             /* accessibility code ends here */
@@ -109,32 +106,13 @@ function setupRightNav(manifest) {
         $('#openNav').click(openRightSideNav);
         $('#closeNav').click(closeRightSideNav);
     }
-    if (selectedTutorial === undefined) {
+    if (selectedModule === undefined) {
         return manifest.modules[0];
     } else {
-        return selectedTutorial;
+        return selectedModule;
     }
 }
-/* The following function creates shortname from title */
-function createShortNameFromTitle(title) {
-    if (!title) {
-        alert("The title in the manifest file cannot be blank!");
-        return "ErrorTitle";
-    }
-    const removeFromTitle = ["-a-", "-in-", "-of-", "-the-", "-to-", "-an-", "-is-", "-your-", "-you-", "-and-", "-from-", "-with-"];
-    const folderNameRestriction = ["<", ">", ":", "\"", "/", "\\\\", "|", "\\?", "\\*"];
-    let shortname = title.toLowerCase().replace(/ /g, '-').trim().substr(0, 50);
-    $.each(folderNameRestriction, function (i, value) {
-        shortname = shortname.replace(new RegExp(value, 'g'), '');
-    });
-    $.each(removeFromTitle, function (i, value) {
-        shortname = shortname.replace(new RegExp(value, 'g'), '-');
-    });
-    if (shortname.length > 40) {
-        shortname = shortname.substr(0, shortname.lastIndexOf('-'));
-    }
-    return shortname;
-}
+
 /*the following function changes the path of images as per the path of the MD file.
 This ensures that the images are picked up from the same location as the MD file.
 The manifest file can be in any location.*/

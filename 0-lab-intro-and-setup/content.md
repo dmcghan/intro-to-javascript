@@ -16,9 +16,9 @@ APEX developers only need to know a little bit of JavaScript to have a significa
 
 | # | Module | Est. Time |
 | --- | --- | --- |
-| 1 | [JavaScript Basics](?lab=1-javascript-basics) | 60 min |
-| 2 | [Adding JavaScript to APEX Apps](?lab=2-adding-javascript-to-apex-apps) | 60 min |
-| 3 | [Working with jQuery and the DOM](?lab=3-working-with-the-dom-and-jquery) | 60 min |
+| 1 | [JavaScript Basics](?module=1-javascript-basics) | 60 min |
+| 2 | [Adding JavaScript to APEX Apps](?module=2-adding-javascript-to-apex-apps) | 60 min |
+| 3 | [Working with jQuery and the DOM](?module=3-working-with-the-dom-and-jquery) | 60 min |
 
 ## **Part 1**: Acquire an Oracle Cloud trial account
 
@@ -114,7 +114,7 @@ When you first access APEX you will need to log in as an APEX instance administr
 
 ## **Part 5**: Navigate to Module 1
 
-1.  [Click here](?lab=1-javascript-basics) to navigate to Module 1. Alternatively, you can click the navigation menu icon in the upper-left corner of the browser window to see a list of modules in the lab.
+1.  [Click here](?module=1-javascript-basics) to navigate to Module 1. Alternatively, you can click the navigation menu icon in the upper-left corner of the browser window to see a list of modules in the lab.
 
     ![](images/lab-intro.png)
 
