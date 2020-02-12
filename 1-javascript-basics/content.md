@@ -16,13 +16,13 @@ In this part, you will learn how to declare variables and work with different op
 
 1.  In Chrome, press **Command+Option+J** (Mac) or **Control+Shift+J** (Windows/Linux) to open the DevTools Console tab.
 
-    ![](images/1/open-console.png)
+    ![](images/open-console.png)
 
 2.  The developer tools window can be docked to the browser in different ways or completely undocked. Take a moment to practice resizing and changing the position of the developer tools window using the customization menu. 
 
     Go to the next step when you have the developer tools window positioned as you like it.
 
-    ![](images/1/devtools-dock-side.png)
+    ![](images/devtools-dock-side.png)
 
 3.  Type the following code into the **Console** tab. Try typing it out, rather than copy-pasting it. Note that pressing **Enter** will execute the code in the console. Use **Shift+Enter** to add new lines. 
 
@@ -35,7 +35,7 @@ In this part, you will learn how to declare variables and work with different op
 
 4.  Press **Enter** to execute the code entered in the previous step. You should see the number `3` output to the console.
 
-    ![](images/1/repl-output.png)
+    ![](images/repl-output.png)
 
     As you can see, the console is an implementation of a Read-Eval-Print-Loop (REPL). It reads your code, executes it, prints the output from the last expression, and then returns control to you to do it all over again.
 
@@ -51,7 +51,7 @@ In this part, you will learn how to declare variables and work with different op
 
 6.  Press **Enter** to execute the code. You should see output like the following in the console.
 
-    ![](images/1/console-log-output.png)
+    ![](images/console-log-output.png)
 
     As you can see, the `console.log` method provides a means of getting output from JavaScript code. This can be useful for simple debugging.
 
@@ -59,7 +59,7 @@ In this part, you will learn how to declare variables and work with different op
 
 7.  Return to the console and begin typing the name of one of the variables declared in the previous code (e.g. `var1`). You should see an autocomplete popup window that shows the names of both variables.
 
-    ![](images/1/auto-complete.png)
+    ![](images/auto-complete.png)
 
     Note that if you type the full name of a variable and press **Enter**, the value of the variable will be displayed in the console.
 
