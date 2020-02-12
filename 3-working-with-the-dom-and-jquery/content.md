@@ -10,9 +10,7 @@ All the work in this module will be done via the browser's console. However, onc
 
 ***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
-## Parts
-
-### **Part 1:** Basic selection, traversal, and manipulation in the DOM
+## **Part 1:** Basic selection, traversal, and manipulation in the DOM
 
 jQuery makes it easy to select elements, traverse the DOM tree, and make changes to the DOM as needed. In this part, you will practice using a few of the jQuery methods that make it possible.
 
@@ -80,7 +78,7 @@ jQuery makes it easy to select elements, traverse the DOM tree, and make changes
     $('.t-NavigationBar').children().eq(1).removeClass('icon-only');
     ```
 
-### **Part 2:** Working with events and event delegation
+## **Part 2:** Working with events and event delegation
 
 In this part, you will create basic regular event listeners and then learn why sometimes event delegation is needed in APEX.
 

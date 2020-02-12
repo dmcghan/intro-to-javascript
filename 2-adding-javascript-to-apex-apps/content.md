@@ -236,4 +236,4 @@ In the last part, you added JavaScript code directly to page and component level
 
 ## Summary
 
-This completes Module 2. At this point, you should have a solid understanding of the options available for adding JavaScript to APEX applications. [Click here](3-working-with-the-dom-and-jquery.md) to navigate to Module 3.
+This completes Module 2. At this point, you should have a solid understanding of the options available for adding JavaScript to APEX applications. [Click here](?module=working-with-the-dom-and-jquery) to navigate to Module 3.

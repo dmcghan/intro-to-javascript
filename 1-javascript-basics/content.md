@@ -139,4 +139,4 @@ Objects and functions are used to compose and organize code in JavaScript. It's 
 
 ## Summary
 
-This completes Module 1. At this point, you should be getting comfortable working with the console and some of JavaScript's core concepts. [Click here](2-adding-javascript-to-apex-apps.md) to navigate to Module 2.
+This completes Module 1. At this point, you should be getting comfortable working with the console and some of JavaScript's core concepts. [Click here](?module=adding-javascript-to-apex-apps) to navigate to Module 2.
