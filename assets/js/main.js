@@ -246,13 +246,13 @@ function setupLeftNav() {
     });
     $(window).scroll(function () {
         if ($(this).scrollTop() > $("article").offset().top) {
-            $('#toc').addClass("scroll");
+            $('#toc,#openNav').addClass("scroll");
             if (($(window).scrollTop() + $(window).height()) > $('footer').position().top) //if footer is seen                 
                 $('#toc').height($('footer').position().top - $(window).scrollTop());
             else
                 $('#toc').height('100%');
         } else {
-            $('#toc').removeClass("scroll");
+            $('#toc,#openNav').removeClass("scroll");
         }
     });
 }

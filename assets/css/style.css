@@ -681,6 +681,7 @@ blockquote {
     position: relative;
     max-width: 211px;
     overflow: hidden;
+    background-color: #383330;
 }
 
 #toc.scroll {    
@@ -693,6 +694,12 @@ blockquote {
     padding-right: 15px;
     box-sizing: content-box;
     overflow-x: hidden;
+}
+
+#navOpen.scroll {
+    position: fixed;
+    right: 5px;
+    top: 5px;
 }
 
 #contentBox {
