@@ -309,6 +309,10 @@ a:active {
     margin-right: auto;
 }
 
+#module-content img {
+    width: 100%;
+}
+
 
 /* Footer */
 
