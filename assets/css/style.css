@@ -311,6 +311,7 @@ a:active {
 
 #module-content img {
     max-width: 100%;
+    box-shadow: 0 24px 48px -24px rgba(0, 0, 0, .3);
 }
 
 
