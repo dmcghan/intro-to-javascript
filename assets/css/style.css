@@ -72,9 +72,11 @@ a:active {
 }
 
 .hol-Header-wrap {
-    max-width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 1328px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     min-height: 64px;
@@ -223,13 +225,13 @@ a:active {
     right: 10px;
     top: 10px;
     appearance: none;
-    padding: 8px;
+    padding: 10px;
     border: 0;
     cursor: pointer;
     color: currentColor;
     border-radius: 2px;
-    min-width: 32px;
-    min-height: 32px;
+    min-width: 44px;
+    min-height: 44px;
     background-color: #383330;
     color: #fcfbfa;
     display: block;
@@ -249,7 +251,7 @@ a:active {
 .hol-Nav-closeIcon:after {
     bottom: 0;
     transform: rotate(-90deg);
-}
+    width: 22px;}
 
 
 /* Nav List */
@@ -300,6 +302,9 @@ a:active {
 
 #module-content {
     max-width: 100%;
+    max-width: 1328px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-left: auto;
     margin-right: auto;
 }

@@ -60,7 +60,8 @@ function gtag() {
 function openRightSideNav() {
     $('#mySidenav').attr("style", "width: 270px; overflow-y: auto; box-shadow: 0 0 48px 24px rgba(0, 0, 0, .3);");
     $('#mySidenav li, #closeNav').attr('tabindex', '0');
-    $('h1').css("margin-right", "270px");
+    $('#contentBox,h1').css("margin-right", "270px");
+    $('#contentBox').css("margin-right", "300px");
     setTimeout(function () {
         document.getElementsByClassName('selected')[0].scrollIntoView(false);
     }, 1000);
@@ -69,7 +70,8 @@ function openRightSideNav() {
 function closeRightSideNav() {
     $('#mySidenav li, #closeNav').attr('tabindex', '-1');
     $('#mySidenav').attr("style", "width: 0px; overflow-y: hidden; box-shadow: 0 0 48px 24px rgba(0, 0, 0, 0);");
-    $('h1').css("margin-right", "0px");
+    $('#contentBox,h1').css("margin-right", "0px");
+    $('#contentBox').css("margin-right", "30px");
 }
 /* The following functions creates and populates the right side navigation including the open button that appears in the header.
 The navigation appears only when the manifest file has more than 1 tutorial. The title that appears in the side navigation 
