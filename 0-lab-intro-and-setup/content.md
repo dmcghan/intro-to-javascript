@@ -110,7 +110,7 @@ When you first access APEX you will need to log in as an APEX instance administr
 
 ## **Part 5**: Navigate to Module 1
 
-1.  [Click here](?module=javascript-basics) to navigate to Module 1. Alternatively, you can click the navigation menu icon in the upper-left corner of the browser window to see a list of modules in the lab.
+1.  [Click here](?module=javascript-basics) to navigate to Module 1. Alternatively, you can click the navigation menu icon in the upper-right corner of the browser window to see a list of modules in the lab.
 
     ![](images/lab-intro.png)
 
