@@ -28,15 +28,15 @@ Dynamic Actions are the easiest way to add JavaScript to an application in APEX.
 
     At the moment, the **Product Image** item and the region that displays the image are both visible when the **Product Available** item is set to **No**. In the subsequent steps, you will implement a Dynamic Action that hides the image item and related region when **Product Available** item is set to **No**.
 
-4.  Navigate to the Page Designer for page 6, the Product Details page, in the sample app. In the Rendering pane on the left, right-click the item named **P6_PRODUCT_AVAIL** and select **Create Dynamic Action**.
+4.  Navigate to the Page Designer for page 6, the Product Details page, in the sample app. In the Rendering pane on the left, right-click the item named **P6\_PRODUCT\_AVAIL** and select **Create Dynamic Action**.
 
     ![](images/create-dynamic-action.png)
 
-5.  In the properties pane on the right, set **Name** to **P6_PRODUCT_AVAIL changed**. Notice that the selections for **Event**, **Selection Type**, and **Item(s)** are all correct because the action was created by right-clicking **P6_PRODUCT_AVAIL**. Open the **Event** select list to view all of the other events available before continuing.
+5.  In the properties pane on the right, set **Name** to **P6\_PRODUCT\_AVAIL changed**. Notice that the selections for **Event**, **Selection Type**, and **Item(s)** are all correct because the action was created by right-clicking **P6\_PRODUCT\_AVAIL**. Open the **Event** select list to view all of the other events available before continuing.
 
     ![](images/dynamic-action-name.png)
 
-6.  To create the opportunity to have both true and false actions, you will need to define a client-side condition. In the **Client-side Condition** section, set **Type** to **Item = Value**, **Item** to **P6_PRODUCT_AVAIL** (should be the default), and **Value** to **Y**.
+6.  To create the opportunity to have both true and false actions, you will need to define a client-side condition. In the **Client-side Condition** section, set **Type** to **Item = Value**, **Item** to **P6\_PRODUCT\_AVAIL** (should be the default), and **Value** to **Y**.
 
     ![](images/client-side-condition.png)
 
@@ -44,7 +44,7 @@ Dynamic Actions are the easiest way to add JavaScript to an application in APEX.
 
     ![](images/select-show.png)
 
-8.  In the right pane, set **Selection Type** to **Item(s)** and **Item(s)** to **P6_PRODUCT_IMAGE**.
+8.  In the right pane, set **Selection Type** to **Item(s)** and **Item(s)** to **P6\_PRODUCT\_IMAGE**.
 
     ![](images/affected-elements.png)
 
@@ -78,7 +78,7 @@ In this part, you will use these features in the Dynamic Action you created in t
 
     ![](images/select-dynamic-action.png)
 
-2.  In the **When** section of the right pane, set **Event** to **Custom**, **Custom Event** to **change**, **Selection Type** to **jQuery Selector**, and **jQuery Selector** to **#P6_PRODUCT_AVAIL**.
+2.  In the **When** section of the right pane, set **Event** to **Custom**, **Custom Event** to **change**, **Selection Type** to **jQuery Selector**, and **jQuery Selector** to **#P6\_PRODUCT\_AVAIL**.
 
     ![](images/when-javascript.png)
 
