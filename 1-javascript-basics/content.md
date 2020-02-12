@@ -4,11 +4,11 @@
 
 In this module, you will start working with the basics of JavaScript, including variables, operators, and functions - all from the console in your browser's developer tools. 
 
-This module is based on [Google Chrome's DevTools](https://developers.google.com/web/tools/chrome-devtools/), so use that browser if possible. You may use a different browser if you wish, but you'll need to adapt the instructions that follow as needed.
+This module is based on <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Google Chrome's DevTools</a>, so use that browser if possible. You may use a different browser if you wish, but you'll need to adapt the instructions that follow as needed.
 
-[Click here](https://www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-1-javascript-basics) to view the slides for this module.
+<a href="https://www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-1-javascript-basics" target="_blank">Click here</a> to view the slides for this module.
 
-***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+***To log issues***, click here to go to the <a href="https://github.com/oracle/learning-library/issues/new" target="_blank">github oracle</a> repository issue submission form.
 
 ## **Part 1:** Using the browser's console
 

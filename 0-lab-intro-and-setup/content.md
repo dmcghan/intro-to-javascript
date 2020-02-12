@@ -18,11 +18,11 @@ Before continuing to the first module, follow the steps below to create an APEX 
 
 ## **Part 1**: Acquire an Oracle Cloud trial account
 
-In this part, you will sign up for an Oracle Cloud trial account. Trial accounts have access to the [free tier services](https://www.oracle.com/cloud/free/) and get a $300 credit for other services. This lab only requires an APEX workspace, which is available via the free tier services and will continue to work when the credits expire (after 30 days). Use the credits as you wish to explore other parts of the Oracle Cloud.
+In this part, you will sign up for an Oracle Cloud trial account. Trial accounts have access to the <a href="https://www.oracle.com/cloud/free/" target="_blank">free tier services</a> and get a $300 credit for other services. This lab only requires an APEX workspace, which is available via the free tier services and will continue to work when the credits expire (after 30 days). Use the credits as you wish to explore other parts of the Oracle Cloud.
 
 1.  If you already have an Oracle Cloud trial account (or regular account), you may skip to the next part.
 
-2.  Please <a href="https://myservices.us.oraclecloud.com/mycloud/signup?language=en&sourceType=:ow:lp:mt::RC_NAMK190904P00063:SodaNodeJson&intcmp=:ow:lp:mt::RC_NAMK190904P00063:SodaNodeJson" target="_trial_">click this link to create your free account</a>. 
+2.  Please <a href="http://bit.ly/Javascript_APEX_HOL" target="_blank">click this link to create your free account</a>. 
 
 3.  Soon after requesting your account you will receive the following email. Once you receive this email you may proceed to Part 2.
 
@@ -34,7 +34,7 @@ In this part, you will log into your Oracle Cloud account so that you can start 
 
 1.  Once you receive the **Get Started Now with Oracle Cloud** email, make note of your **Username**, **Password**, and **Cloud Account Name**.
 
-2.  From any browser go to [https://cloud.oracle.com/en_US/sign-in](https://cloud.oracle.com/en_US/sign-in).
+2.  From any browser go to <a href="https://cloud.oracle.com/en_US/sign-in" target="_blank">https://cloud.oracle.com/en_US/sign-in</a>.
 
 3.  Enter your **Cloud Account Name** in the input field and click the **Next** button.
 

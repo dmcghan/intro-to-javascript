@@ -6,9 +6,9 @@ Up to this point, you have been working with JavaScript outside of APEX. In this
 
 Think of these options as a progression, with each one requiring more knowledge of JavaScript, APEX's JavaScript APIs, and web development in general. New APEX developers should start by learning Dynamic Actions and progress to subsequent options only when they are ready and the application requirements cannot be satisfied without a more advanced approach. Generally speaking, the more declarative the solution, the easier it will be to implement and maintain.
 
-[Click here](https://www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-2-adding-javascript-to-apex-apps) to view the slides for this module.
+<a href="https://www.slideshare.net/DanielMcGhan/introduction-to-javascript-for-apex-developers-module-2-adding-javascript-to-apex-apps" target="_blank">Click here</a> to view the slides for this module.
 
-***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
+***To log issues***, click here to go to the <a href="https://github.com/oracle/learning-library/issues/new" target="_blank">github oracle</a> repository issue submission form.
 
 ## **Part 1:** Using Dynamic Actions
 
