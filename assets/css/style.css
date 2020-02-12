@@ -310,7 +310,7 @@ a:active {
 }
 
 #module-content img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -681,7 +681,6 @@ blockquote {
     position: relative;
     max-width: 211px;
     overflow: hidden;
-    background-color: #383330;
 }
 
 #toc.scroll {    
@@ -696,10 +695,11 @@ blockquote {
     overflow-x: hidden;
 }
 
-#navOpen.scroll {
+#openNav.scroll {
     position: fixed;
     right: 5px;
     top: 5px;
+    background-color: #383330;
 }
 
 #contentBox {
