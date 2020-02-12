@@ -117,8 +117,8 @@ Objects and functions are used to compose and organize code in JavaScript. It's 
 
 1.  Enter the following code into the console and execute it.
 
-    <copy>
     ```
+    <copy>
     var person = {
       first: '',
       last: ''
@@ -127,8 +127,8 @@ Objects and functions are used to compose and organize code in JavaScript. It's 
     function sayHello(p) {
       console.log('Hi ' + p.first + ' ' + p.last);
     }
-    ```
     </copy>
+    ```
 
 2.  Using the console, type and execute code that sets the values of the `first` and `last` attributes of the `person` variable.
 
