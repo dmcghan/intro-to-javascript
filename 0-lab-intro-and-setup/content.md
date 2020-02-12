@@ -1,16 +1,12 @@
 # Introduction to JavaScript for APEX Developers
 
-## Lab overview
+## Lab overview and setup
 
 Welcome to the Introduction to JavaScript for APEX Developers hands-on lab. For developers that know SQL and PL/SQL, no other framework is as empowering as Oracle Application Express (APEX). But at the end of the day, APEX creates web apps, and it's JavaScript that programs the web. Over the years, JavaScript's role in APEX apps has increased, both for the creators of APEX and the developers using it - a trend that will continue in the years to come.
 
 APEX developers only need to know a little bit of JavaScript to have a significant impact, and that's what this hands-on lab is all about! You'll start by learning some of the basics of JavaScript, then learn how to add JavaScript to APEX apps, and finally, you'll learn to use jQuery to work with the DOM.
 
-**Lab Objectives**
-
-* Learn the basics of JavaScript using PL/SQL as a guide
-* Learn how to add JavaScript to an APEX app
-* Get experience working with the jQuery and DOM
+Before continuing to the first module, follow the steps below to create an APEX workspace using the free tier in Oracle Cloud. If you already have a workspace you'd like to use, you may [proceed to the first module](?module=javascript-basics).
 
 **Lab Modules**
 
@@ -22,7 +18,7 @@ APEX developers only need to know a little bit of JavaScript to have a significa
 
 ## **Part 1**: Acquire an Oracle Cloud trial account
 
-In this part, you will sign up for an Oracle Cloud trial account. Trial accounts have access to the [free tier services](https://www.oracle.com/cloud/free/) and get a $300 credit for other services. This lab only requires an APEX Workspace, which is available via the free tier services and will continue to work when the credits expire (after 30 days). Use the credits as you wish to explore other parts of the Oracle Cloud.
+In this part, you will sign up for an Oracle Cloud trial account. Trial accounts have access to the [free tier services](https://www.oracle.com/cloud/free/) and get a $300 credit for other services. This lab only requires an APEX workspace, which is available via the free tier services and will continue to work when the credits expire (after 30 days). Use the credits as you wish to explore other parts of the Oracle Cloud.
 
 1.  If you already have an Oracle Cloud trial account (or regular account), you may skip to the next part.
 

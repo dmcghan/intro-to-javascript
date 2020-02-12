@@ -1,6 +1,6 @@
 # Module 1: JavaScript Basics
 
-## Introduction
+## Module overview
 
 In this module, you will start working with the basics of JavaScript, including variables, operators, and functions - all from the console in your browser's developer tools. 
 
@@ -10,15 +10,7 @@ This module is based on [Google Chrome's DevTools](https://developers.google.com
 
 ***To log issues***, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
-## Module 1 Objectives
-
-- Become familiar with the browser's console
-- Learn how to declare variables and work with operators
-- Learn how to create and execute functions
-
-## Parts
-
-### **Part 1:** Using the browser's console
+## **Part 1:** Using the browser's console
 
 In this part, you will learn how to declare variables and work with different operators in your web browser's console.
 
@@ -73,7 +65,7 @@ In this part, you will learn how to declare variables and work with different op
 
 8.  Refresh the web page and try typing the name of a variable again. They will not show up because each time a page is loaded in the browser, it gets its own new JavaScript context. 
 
-### **Part 2:** Variables, data types, and operators
+## **Part 2:** Variables, data types, and operators
 
 Now that you have a basic working knowledge of the console, it's time to get your hands dirty working with JavaScript.
 
@@ -95,7 +87,7 @@ Now that you have a basic working knowledge of the console, it's time to get you
     | Comparison | `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=` |
     | Logical | `&&`, `||`, `!` |
 
-### **Part 3:** Conditionals and loops
+## **Part 3:** Conditionals and loops
 
 Programming wouldn't be possible without conditionals and loops. The basic `if` statement and `for` loop are all you really need to get going with JavaScript.
 
@@ -119,7 +111,7 @@ Programming wouldn't be possible without conditionals and loops. The basic `if` 
 
     Run your code to test it as needed.
 
-### **Part 4:** Objects and functions
+## **Part 4:** Objects and functions
 
 Objects and functions are used to compose and organize code in JavaScript. It's important to have a basic understanding of how they work before moving on to more complex topics.
 

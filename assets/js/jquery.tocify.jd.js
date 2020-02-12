@@ -514,7 +514,6 @@
                 duration;
 
             // Event delegation that looks for any clicks on list item elements inside of the HTML element calling the plugin
-            console.log(this);
             this.element.on("click", "a", function(event) {
                 event.preventDefault();
             });
